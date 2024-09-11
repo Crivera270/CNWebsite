@@ -1,6 +1,26 @@
 body {
     background-color: #ffffff;
 }
+.header {
+    padding: 20px;
+    text-align: left;
+    background: white;
+}
+button.logo{
+    text-align: center;
+    border-radius: 150%;
+    padding: 10px 10px;
+    color: grey;
+    background: whitesmoke;
+    float: left;
+    border: white;
+    font-size: 20px;
+    margin: 5px;
+}
+p.LLC{
+    float: left;
+    text-align: left;
+}
 footer {
     background-color: #ecdfdf;
     padding: 200px;
@@ -12,3 +32,24 @@ p.dotted {border-style: dotted;
     padding: 20px;
     width: 70%;
     background-color: #f1f1f1;}
+.button {
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px 10px;
+    color: white;
+    background: black;
+    float: right;
+    font-size: 10px;
+    margin: 6px;
+
+}
+p.rightbutton{
+    float: right;
+}
+.mid{
+    padding:25px;
+}
+h4{
+    margin: 0;
+    display: inline-block;
+}
