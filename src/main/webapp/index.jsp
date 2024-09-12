@@ -21,7 +21,7 @@
             25%  {background-color:red; left:200px; top:0px;}
             50%  {background-color:blue; left:400px; top:0px;}
             75%  {background-color:green; left: 800px; top:0px;}
-            100% {background-color:black; left:1000px; top:0px;}
+            100% {background-color:black; left:2000px; top:0px;}
 
         }
     </style>
@@ -41,6 +41,28 @@
 </div>
 
 <button class = "animation"> :) </button>
+<br/>
+<br/>
+
+<div class = "pictures">
+    <img src="Dress1.jpg" alt="Dress" >
+    <div class="desc">Alterations</div>
+</div>
+<div class = "pictures">
+    <img src="Dress1.jpg" alt="Dress" >
+    <div class="desc">Custom Pieces</div>
+</div>
+
+<div class = "pictures">
+    <img src="Dress1.jpg" alt="Dress" >
+    <div class="desc">Classes</div>
+</div>
+
+
+<div class="slidecontainer">
+    <p>How much would you pay for your dream dress?    $0 - $20,000</p>
+    <input type="range" min="1" max="10000" value="50" class="slider" id="myRange">
+</div>
 
 <br/>
 <br/>
