@@ -20,7 +20,16 @@ public class HelloServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
+        out.println("<form >\n" +
+                "  <label for=\"fname\">First name:</label><br>\n" +
+                "  <input type=\"text\" id=\"fname\" name=\"fname\" value=\"John\"><br>\n" +
+                "  <label for=\"lname\">Last name:</label><br>\n" +
+                "  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>\n" +
+                "  <input type=\"submit\" value=\"Submit\">\n" +
+                "</form>");
+        out.println("</html></body>");
+
+
     }
 
     public void destroy() {
