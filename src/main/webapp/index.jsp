@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Style.css">
     <style>
         button.animation {
-            background-image: url('f.jpg');
+            background-image: url('f2.jpg');
             width: 228px;
             height: 222px;
             background-color: pink;
@@ -27,6 +27,7 @@
         }
     </style>
 </head>
+
 
 
 <div class="header">
@@ -53,34 +54,46 @@
 <br/>
 
 <div class = "pictures">
-    <img class ="pics" src="Dress1.jpg" alt="Dress" >
-    <div class="desc">Alterations</div>
+    <img class ="pics" src="Dress2.jpeg" alt="Dress" >
+    <div class="desc">Alterations
+    <p>To ensure everything is perfect, I require your wedding dress at least
+        8 weeks before your wedding day. Throughout the alteration process, you’ll
+        typically have 2 to 3 fittings to make sure the dress is tailored perfectly to you.</p>
+    </div>
 </div>
 <div class = "pictures">
-    <img class ="pics" src="Dress1.jpg" alt="Dress" >
-    <div class="desc">Custom Pieces</div>
+    <img class ="pics" src="Dress3.jpeg" alt="Dress" >
+    <div class="desc">Custom Pieces
+    <p>We’ll work together to bring your vision to life, choosing fabrics and
+        colors that match your style. Every gown reflects my dedication to expert craftsmanship.</p></div>
 </div>
 
 <div class = "pictures">
-    <img class ="pics" src="Dress1.jpg" alt="Dress" >
-    <div class="desc">Classes</div>
+    <img class ="pics" src="Dress4.jpeg" alt="Dress" >
+    <div class="desc">Classes
+    <p>Whether you're a complete beginner or looking to refine your skills,
+        our classes offer a fun and supportive environment. Learn to sew your own
+        projects, explore various techniques, and unleash your creativity. </p></div>
 </div>
 <div class ="blocker"></div>
+
+
 <div class="slidecontainer">
     <p>How much would you pay for your dream dress?    $0 - $20,000</p>
     <input type="range" min="1" max="10000" value="1000" class="slider" id="myRange">
 </div>
 
 <div class="video">
-    <img  src = "f.jpg" alt ="Carmen Negron">
+
+    <video width="500" height="500"  controls autoplay>
+        <source src="VideoDress.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
 
 
 
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <br/>
@@ -93,9 +106,25 @@
 
 
 
+
+
+<img class = "carmen" src = "Cshort.jpeg" alt ="Carmen Negron">
 <footer>
     <h2>About me</h2>
-    <img class = "carmen" src = "f.jpg" alt ="Carmen Negron">
+    <p> My home studio is open by appointment only, offering a professional
+        person to person consultation. With over 30 years of experience on this art.
+        I offer a high stand customer service, fashion knowledge and a high
+        level of exceptional craftsmanship.
+        Each bride experience a smooth process from beginning to end and I do all
+        that I can to make the experience a very special one.I have a passion for
+        creating timeless, fashion-forward pieces that balance classic elegance with
+        modern style. My designs are inspired by the beauty of everyday life, and I
+        specialize in creating looks that are both classy and sophisticated. I
+        believe that a dress should not only fit the body but also reflect the
+        personality of the person wearing it. My focus is to create exclusive,
+        one-of-a-kind designs that allow each wearer to express their own unique
+        and beautiful style.</p>
+    <img class = "carmen" src = "C2.jpg" alt ="Carmen Negron">
 </footer>
 </body>
 </html>

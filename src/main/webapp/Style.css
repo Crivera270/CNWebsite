@@ -70,11 +70,12 @@ div.desc {
     clear:left;
 }
 .slidecontainer{
-    float: left;
+    padding: 14px 50px;
 }
+
 img.pics{
     width: 400px;
-    height: 500px;
+    height: 620px;
 }
 div.topnav{
     float:right;
@@ -83,19 +84,54 @@ div.topnav{
     float: left;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding:14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 img.carmen{
     float: right;
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 150%;
+
+
 }
 div.video{
-    float: right;
-    width: 200px;
-    height: 200px;
-    padding: 14px 16px;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+h1{
+    text-align: center;
+}
+form{
+}
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: left;
+}
+label{
+    text-align: left;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    color: white;
+    background:black;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 50%;
+
+}
+div.thatform{
+    text-align: center;
 }
