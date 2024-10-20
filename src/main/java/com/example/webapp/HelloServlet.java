@@ -2,18 +2,25 @@ package com.example.webapp;
 
 import java.io.*;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Persistence;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+
+
 @WebServlet(name = "helloServlet", urlPatterns ={"/hello-servlet"})
 public class HelloServlet extends HttpServlet {
-    private String message;
-
-    public void init() {
-        message = "Hello World!";
-    }
+    static EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("default");
+    static EntityManager entityManager = entityManagerFactory.createEntityManager();
+    static EntityTransaction transaction = entityManager.getTransaction();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+      Lead first = new Lead();
+
+
         response.setContentType("text/html");
 
         // Hello
@@ -36,6 +43,34 @@ public class HelloServlet extends HttpServlet {
                 "</form></div>");
         out.println("</html></body>");
 
+
+        String fname1 = request.getParameter("fname");
+        String lname1 = request.getParameter("lname");
+        String Email1 = request.getParameter("Email");
+        String Message1 = request.getParameter("Message");
+
+
+        try {
+            transaction.begin();
+
+            first.setFirstName(fname1);
+            first.setLastName(lname1);
+            first.setEmail(Email1);
+            first.setMessage(Message1);
+
+
+            entityManager.persist(first);
+
+            transaction.commit();
+
+
+        } finally {
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+            //entityManager.close();
+            //entityManagerFactory.close();
+        }
 
     }
 
