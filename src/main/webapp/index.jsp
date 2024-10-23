@@ -25,6 +25,31 @@
             100% {left:2000px; top:0;}
 
         }
+        .slidecontainer{
+            padding: 14px 50px;
+
+        }
+        .slider{
+            -webkit-appearance: none;
+            width: 25%;
+            height: 25px;
+            background: #ecdfdf;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        .slider:hover {
+            opacity: 1;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: black;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -36,10 +61,10 @@
 </div>
 
 <div class="topnav">
-    <a class="active" href="Classes">Classes</a>
-    <a href="Community">Community</a>
-    <a href="Reviews">Reviews</a>
-    <a href="Pricing">Pricing</a>
+    <a class="active" href="class-servlet">Classes</a>
+    <a href="comm-servlet">Community</a>
+    <a href="rev-servlet">Reviews</a>
+    <a href="price-servlet">Pricing</a>
 </div>
 
 <div class = "mid">
@@ -81,7 +106,17 @@
 <div class="slidecontainer">
     <p>How much would you pay for your dream dress?    $0 - $20,000</p>
     <input type="range" min="1" max="10000" value="1000" class="slider" id="myRange">
+    <p>$<span id="demo"></span></p>
 </div>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
 
 <div class="video">
 

@@ -34,7 +34,7 @@ public class HelloServlet extends HttpServlet {
                 "  <label for=\"fname\">First name:</label><br>\n" +
                 "  <input type=\"text\" id=\"fname\" name=\"fname\" value=\"\"><br>\n" +
                 "  <label for=\"lname\">Last name:</label><br>\n" +
-                "  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"\"><br>\n" +
+                "  <input type=\"text\" class=\"lname\" id=\"lname\" name=\"lname\" value=\"\"><br>\n" +
                 "  <label for=\"Email\">Email:</label><br>\n" +
                 "  <input type=\"text\" id=\"Email\" name=\"Email\" value=\"\"><br>\n" +
                 "  <label for=\"Message\">Message:</label><br>\n" +
