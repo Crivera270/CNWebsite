@@ -72,24 +72,8 @@ div.desc {
 .blocker{
     clear:left;
 }
-.slidecontainer{
-    padding: 14px 50px;
-    width: 50px;
-    height: 10px;
-}
-.slider{
-    -webkit-appearance: none;
-    width: 100%;
-    height: 25px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-.slider:hover {
-    opacity: 1;
-}
+
+
 img.pics{
     width: 400px;
     height: 620px;
@@ -152,3 +136,4 @@ input[type=submit] {
 div.thatform{
     text-align: center;
 }
+

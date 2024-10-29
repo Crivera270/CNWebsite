@@ -26,7 +26,9 @@
 
         }
         .slidecontainer{
-            padding: 14px 50px;
+            padding: 15px 50px;
+            width: 50px;
+            height: 10px;
 
         }
         .slider{
