@@ -67,7 +67,7 @@
 </div>
 
 <div class = "mid">
-<p class ="rightbutton">Contact me here!</p>
+<p class ="rightbutton">< Contact me here!</p>
 <button onclick = "window.location.href='hello-servlet';" class ="button" > <3 </button>
 <h2>MAKING YOUR DREAMS COME TRUE</h2>
 <h4>FASHION DESIGNER AND SEAMSTRESS -- COUTURE DESIGNS AND WEDDING DRESS ALTERATIONS</h4>

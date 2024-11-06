@@ -1,10 +1,10 @@
 body {
-    background-color: #ffffff;
+    background-color: #fdfdfd;
 }
 .header {
     padding: 20px;
     text-align: left;
-    background: white;
+    background: #ecdfdf;
 
 }
 button.logo{
@@ -44,7 +44,7 @@ footer {
 }
 p.rightbutton{
     float: right;
-
+    padding: 0px 30px;
 }
 .mid{
     padding:25px;
@@ -136,5 +136,18 @@ div.thatform{
     text-align: left;
     padding:5px 600px;
 
+}
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 1px lightpink;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #ecdfdf;
+    color: black;
 }
 
