@@ -115,7 +115,7 @@ input[type=text] {
     border:2px solid #ccc;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
     text-align: left;
 }
 label{
@@ -130,10 +130,11 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    width: 50%;
-
+    width: 100%;
 }
 div.thatform{
-    text-align: center;
+    text-align: left;
+    padding:5px 600px;
+
 }
 

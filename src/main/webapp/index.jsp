@@ -27,9 +27,6 @@
         }
         .slidecontainer{
             padding: 15px 50px;
-            width: 50px;
-            height: 10px;
-
         }
         .slider{
             -webkit-appearance: none;
@@ -103,6 +100,8 @@
         projects, explore various techniques, and unleash your creativity. </p></div>
 </div>
 <div class ="blocker"></div>
+
+
 
 
 <div class="slidecontainer">

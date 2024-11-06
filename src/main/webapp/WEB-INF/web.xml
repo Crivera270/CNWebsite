@@ -11,4 +11,16 @@
         <servlet-name>helloServlet</servlet-name>
         <url-pattern>/hello-servlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>classServlet</servlet-name>
+        <servlet-class>com.example.webapp.ClassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>classServlet</servlet-name>
+        <url-pattern>/class-servlet</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>

@@ -1,5 +1,6 @@
 package com.example.webapp;
 
+import com.sun.istack.NotNull;
 import jakarta.persistence.*;
 
 @Entity
@@ -10,15 +11,19 @@ public class Lead {
     @Column(name = "ID", nullable = false)
     private Integer id;
 
+    @NotNull
     @Column(name = "FirstName", length = 30)
     private String firstName;
 
+    @NotNull
     @Column(name = "LastName", length = 30)
     private String lastName;
 
+    @NotNull
     @Column(name = "Email", length = 30)
     private String email;
 
+    @NotNull
     @Column(name = "Message")
     private String message;
 

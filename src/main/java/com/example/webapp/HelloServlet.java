@@ -76,5 +76,4 @@ public class HelloServlet extends HttpServlet {
 
     public void destroy() {
     }
-    //today:Configure and add buttons, more complicated text, add slider, add interactive animation ctrl f5 if css not updating
 }
