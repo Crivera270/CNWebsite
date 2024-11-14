@@ -34,8 +34,9 @@ public class RevServlet extends HttpServlet {
                 "body {\n" +
                 "  font-family: Arial;\n" +
                 "  margin: 0 auto; /* Center website */\n" +
-                "  max-width: 800px; /* Max width */\n" +
-                "  padding: 20px;\n" +
+                "  max-width: 1000px; /* Max width */\n" +
+                "  padding: 20px;" +
+                "background-color: #fdfdfd;\n" +
                 "}\n" +
                 "\n" +
                 ".heading {\n" +
@@ -100,7 +101,52 @@ public class RevServlet extends HttpServlet {
                 "    display: none;\n" +
                 "  }\n" +
                 "}\n" +
-                "</style>\n" +
+                ".flip-card {\n" +
+                "  background-color: transparent;\n" +
+                "  width: 300px;\n" +
+                "  height: 200px;\n" +
+                " \n" +
+                "display: inline-block;" +
+                "padding: 20px;"+
+                "  perspective: 1000px; /* Remove this if you don't want the 3D effect */\n" +
+                "}\n" +
+                "\n" +
+                "/* This container is needed to position the front and back side */\n" +
+                ".flip-card-inner {\n" +
+                "  position: relative;\n" +
+                "  width: 100%;\n" +
+                "  height: 100%;\n" +
+                "  text-align: center;\n" +
+                "  transition: transform 0.8s;\n" +
+                "  transform-style: preserve-3d;\n" +
+                "}\n" +
+                "\n" +
+                "/* Do an horizontal flip when you move the mouse over the flip box container */\n" +
+                ".flip-card:hover .flip-card-inner {\n" +
+                "  transform: rotateY(180deg);\n" +
+                "}\n" +
+                "\n" +
+                "/* Position the front and back side */\n" +
+                ".flip-card-front, .flip-card-back {\n" +
+                "  position: absolute;\n" +
+                "  width: 100%;\n" +
+                "  height: 100%;\n" +
+                "  -webkit-backface-visibility: hidden; /* Safari */\n" +
+                "  backface-visibility: hidden;\n" +
+                "}\n" +
+                "\n" +
+                "/* Style the front side (fallback if image is missing) */\n" +
+                ".flip-card-front {\n" +
+                "  background-color: #bbb;\n" +
+                "  color: black;\n" +
+                "}\n" +
+                "\n" +
+                "/* Style the back side */\n" +
+                ".flip-card-back {\n" +
+                "  background-color: #ecdfdf;\n" +
+                " color: white; \n" +
+                "  transform: rotateY(180deg);\n" +
+                "}</style>\n" +
                 "</head>\n" +
                 "<body>\n" +
                 "\n" +
@@ -170,8 +216,43 @@ public class RevServlet extends HttpServlet {
                 "    <div>20</div>\n" +
                 "  </div>\n" +
                 "</div>\n" +
+                " <div class=\"flip-card\">\n" +
+                "  <div class=\"flip-card-inner\">\n" +
+                "    <div class=\"flip-card-front\">\n" +
+                "      <img src=\"f2.jpg\" alt=\"Avatar\" style=\"width:300px;height:300px;\">\n" +
+                "    </div>\n" +
+                "    <div class=\"flip-card-back\">\n" +
+                "      <h1>Max Bennett</h1>\n" +
+                "      <p>5 STARS</p>\n" +
+                "      <p>Perfect fit, stunning design. Highly recommend!</p>\n" +
+                "    </div>\n" +
+                "  </div>\n" +
+                "</div>" +
                 "\n" +
-                "</body>\n" +
+                "<div class=\"flip-card\">\n" +
+                "  <div class=\"flip-card-inner\">\n" +
+                "    <div class=\"flip-card-front\">\n" +
+                "      <img src=\"f2.jpg\" alt=\"Avatar\" style=\"width:300px;height:300px;\">\n" +
+                "    </div>\n" +
+                "    <div class=\"flip-card-back\">\n" +
+                "      <h1>Lila Hart</h1>\n" +
+                "      <p>5 STARS</p>\n" +
+                "      <p>Talented and quick. Love my custom dress!</p>\n" +
+                "    </div>\n" +
+                "  </div>\n" +
+                "</div> " +
+                "<div class=\"flip-card\">\n" +
+                "  <div class=\"flip-card-inner\">\n" +
+                "    <div class=\"flip-card-front\">\n" +
+                "      <img src=\"f2.jpg\" alt=\"Avatar\" style=\"width:300px;height:300px;\">\n" +
+                "    </div>\n" +
+                "    <div class=\"flip-card-back\">\n" +
+                "      <h1>Ava Sinclair</h1>\n" +
+                "      <p>4 STARS</p>\n" +
+                "      <p>Flawless dress, great service. Worth it!</p>\n" +
+                "    </div>\n" +
+                "  </div>\n" +
+                "</div></body>\n" +
                 "</html>");
 
 

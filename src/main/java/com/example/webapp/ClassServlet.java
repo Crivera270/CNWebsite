@@ -88,7 +88,8 @@ public class ClassServlet extends HttpServlet {
                 "<h4>Late policy:</h4> " +
                 "<p>Late arrivals beyond 15 minutes will be considered a no-show, " +
                 "and rescheduling or refunds will not be provided. We encourage early" +
-                " arrival to set up and be ready to start at the designated class time.</p></body>\n" +
+                " arrival to set up and be ready to start at the designated class time.</p>" +
+                "<img src='class1.jpg' alt='Example Image'/> <img src='class2.jpg' alt='Example Image'/> </body>\n" +
                 "</html>\n");
 
 

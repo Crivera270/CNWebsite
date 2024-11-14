@@ -53,7 +53,7 @@ public class priceServlet extends HttpServlet {
                 "<p><i>•Please note that material costs are separate " +
                 "from labor fees and will be discussed during the consultation. </i></p>" +
                 "<p>•<i>Please note additional materials such as lace, fabric, or buttons may incur an extra charge.</i></p>" +
-                "<p>•</p>" +
+                "<p>•</p> <img src='Price1.jpg' alt='Example Image'/> <img src='Price2.jpg' alt='Example Image'/> <img src='Price3.jpg' alt='Example Image'/>" +
                 "</div>\n");
         out.println("</html></body>");
 
