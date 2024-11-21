@@ -28,24 +28,36 @@ public class CommServlet extends HttpServlet {
                 "  background-color: white;\n" +
                 "  color: black;\n" +
                 "  border: 2px solid pink;\n" +
-                "  padding: 10px 20px;\n" +
+                "  padding: 20px 40px;\n" +
                 "  text-align: center;\n" +
                 "  text-decoration: none;\n" +
-                "  display: inline-block;\n" +
+                "  \n" +
                 "}\n" +
                 "\n" +
+                "div.links{ margin: auto;" +
+                "width: 50%;" +
+                "display: block;}" +
+                "header{    padding: 20px;\n" +
+                "    text-align: left;\n" +
+                "    background: #ecdfdf;\n}" +
                 "a:hover, a:active {\n" +
                 "  background-color: #ecdfdf;\n" +
                 "  color: black;\n" +
-                "}\n" +
+                "}" +
+                "img{display: block;\n" +
+                "  margin-left: auto;\n" +
+                "  margin-right: auto;\n" +
+                "  width: 80%;" +
+                " margin: 55px 180px;}\n" +
                 "</style>\n" +
                 "</head><body>");
-        out.println("<h1>Community!</h1>");
-        out.println("<p>Feel free to follow me on my social media!</p>");
+        out.println("<header><h1>Community:</h1></header><div class =\" +\"links\"+\">");
+        out.println("<h1>Follow me on my social media!</h1>");
         out.println("<a href = https://www.etsy.com/shop/carmennegronboutique/?etsrc=sdt>Etsy</a>");
         out.println("<a href = https://www.instagram.com/carmennegrondesigns/>Instagram</a>");
         out.println("<a href = https://www.facebook.com/CarmenNegronDesigns>FaceBook</a>");
-        out.println("<p></p>");
+        out.println("<p></p>" +
+                "<img src='img.png' alt='Example Image'/></div>");
 
         out.println("</html></body>");
 
